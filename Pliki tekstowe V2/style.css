@@ -1,0 +1,87 @@
+
+
+body
+{
+	background-color: #21051c;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+h1
+{
+    margin-left: 20px;
+    font-family: 'Calligraffitti', cursive;
+    text-align: center;
+}
+
+#header
+{
+	text-align: center;
+	clear: both;
+	background-color: #232323;
+    width: 100%;
+    min-height:40px;
+    padding-bottom: 40px;
+}
+
+#content
+{
+	text-align: center;
+	background-color: #232323;
+	clear: both;
+    width: 100%;
+    min-height: 1000px;
+    margin-top: 100px;
+}
+
+
+
+#nav
+{
+    text-align: right;
+    float: right;
+    margin-right: 50px;
+    height: 40px;
+}
+
+ul
+{
+
+    list-style-type: none;
+}
+li
+{
+    padding-top: 10px;
+    float: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+  
+}
+
+ul a
+{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+ul a:hover
+{
+/*
+slategray to zajebisty kolor
+    
+*/
+    color: slategray;
+}
+
+
+#footer
+{
+	text-align: center;
+	clear: both;
+	background-color: #232323;
+	margin-top: 200px;
+    min-height: 100px;
+}
