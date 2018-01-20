@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <!-- do wypełnienia -->
+    <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style.css" >
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+<script src="jquery-1.11.3.min.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.header').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.header').addClass('sticky');
+	} else {
+		$('.header').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+<header>
+	<div class="header">
+    <div id="logo" style="float: left;">
+    <h1><span>W&amp;P</span> Enterprise</h1>
+    </div>
+   
+    
+       <nav>
+        <div id="nav">
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>             
+        </div>
+    </nav>		
+</div> 	
+</header>
+
+
+
+
+
+
+<main>
+	<div id="content">
+    
+    <div id="s1">
+        
+        <div id="logo-s1">
+         <span>W&amp;P</span> Enterprise <br>
+         <img src="Logo.png" height="300px" width="300px">   
+        </div>
+        
+        <div id="quote">
+            <p>"Anything we play is <span>W</span>ell <span>P</span>layed"</p> 
+        </div>
+    </div>  
+        
+        </div>
+</main>	
+
+
+
+
+
+
+
+<footer>
+	<div id="footer">
+		stupki :3
+	</div>
+</footer>
+<script src="jquery-1.11.3.min.js"></script>
+</body>
+
+</html>
+
+
