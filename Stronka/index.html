@@ -1,60 +1,39 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
-   <!-- do wypełnienia -->
+   <!-- do wypełnienia bo SEO -->
     <meta charset="utf-8">
-	<title></title>
+	<title>W&amp;P</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
-	
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" type="text/css" href="style.css" >
-<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Open+Sans&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
 <script src="jquery-1.11.3.min.js"></script>
-	
-<script>
+<script src="sticky.js"></script>
+<script src="typer.js"></script>
+<script src="jquery-1.11.3.min.js"></script>
 
-	$(document).ready(function() {
-	var NavY = $('.header').offset().top;
-	 
-	var stickyNav = function(){
-	var ScrollY = $(window).scrollTop();
-		  
-	if (ScrollY > NavY) { 
-		$('.header').addClass('sticky');
-	} else {
-		$('.header').removeClass('sticky'); 
-	}
-	};
-	 
-	stickyNav();
-	 
-	$(window).scroll(function() {
-		stickyNav();
-	});
-	});
-	
-</script>
+
 
 <header>
 	<div class="header">
     <div id="logo" style="float: left;">
-    <h1><span>W&amp;P</span> Enterprise</h1>
+    <h1><a href="#s1"><span id="span1">W&amp;P</span> Enterprise</a></h1>
     </div>
    
     
        <nav>
         <div id="nav">
             <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Photos</a></li>
-                <li><a href="#">Our Partners</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#s1">Main</a></li>
+                <li><a href="#s2">Our Team</a></li>
+                <li><a href="#our">Our Partners</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>             
         </div>
     </nav>		
@@ -62,32 +41,45 @@
 </header>
 
 
+<div id="content">
 
 
+       <section>    
+        <div id="s1">        
+            <div id="logo-s1">
+                <span id="span1">W&amp;P</span> Enterprise <br>
+                 <img src="Logo.png" height="300px" width="300px">   
+            </div>
+            
+            <div id="quote">
+                  <a href="" class="typewrite" data-period="2000" data-type='["Development", "Desing", "Time", "Modernity"]'>
+                <span class="wrap"></span>
+                  </a>
+            </div>
+        </div>
 
-
-<main>
-	<div id="content">
+            <div id="s2">
+              <h1 id="team"><span id="span1">Our</span> Team</h1>
+               <div id="photos">
+                    <div id="link1"></div>
+                    <div id="photo1"><img src="img/1.png" height="400px" width="500px"></div>
+                    <div id="photo2"><img src="img/2.png" height="400px" width="500px"></div>
+                    <div id="photo3"><img src="img/3.png" height="400px" width="500px"></div>
+                    <div id="photo4"><img src="img/4.png" height="400px" width="500px"></div>
+                    <div id="photo5"><img src="img/5.png" height="400px" width="500px"></div>
+                    <div id="photo6"><img src="img/6.png" height="400px" width="500px"></div>
+               </div>
+           
+           
+           
+        
+            </div>
+        </section> 
+        
+              
     
-    <div id="s1">
-        
-        <div id="logo-s1">
-         <span>W&amp;P</span> Enterprise <br>
-         <img src="Logo.png" height="300px" width="300px">   
-        </div>
-        
-        <div id="quote">
-            <p>"Anything we play is <span>W</span>ell <span>P</span>layed"</p> 
-        </div>
-    </div>  
-        
-        </div>
-</main>	
 
-
-
-
-
+</div>
 
 
 <footer>
@@ -95,9 +87,9 @@
 		stupki :3
 	</div>
 </footer>
-<script src="jquery-1.11.3.min.js"></script>
-</body>
 
+
+</body>
 </html>
 
 
